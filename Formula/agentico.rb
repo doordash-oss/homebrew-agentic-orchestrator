@@ -5,21 +5,21 @@
 class Agentico < Formula
   desc "Parallel agentic coding orchestrator TUI"
   homepage "https://github.com/doordash-oss/agentic-orchestrator"
-  version "0.144.0"
+  version "0.144.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.0/agentic-orchestrator_0.144.0_darwin_amd64.tar.gz"
-      sha256 "e31deb971c8696591b4a53c7fd84ddff99d6293b37b7e7b27c4fbc62d34c8262"
+      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.1/agentic-orchestrator_0.144.1_darwin_amd64.tar.gz"
+      sha256 "8a891413d1c58e8050a1f46f954de048c90b9902e245cf0baa09776975136554"
 
       define_method(:install) do
         bin.install "agentico"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.0/agentic-orchestrator_0.144.0_darwin_arm64.tar.gz"
-      sha256 "35ec6cafbc2b23b7483554859ebf258fdf66a2e82b05eebbacd9bd8a71307eba"
+      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.1/agentic-orchestrator_0.144.1_darwin_arm64.tar.gz"
+      sha256 "3b83801259c09352e74e82ed25b99c11993c6eef281b1cd94879faea349174ce"
 
       define_method(:install) do
         bin.install "agentico"
@@ -29,15 +29,15 @@ class Agentico < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.0/agentic-orchestrator_0.144.0_linux_amd64.tar.gz"
-      sha256 "7a87b9b695b64961620f201968e130521f66fccb57b24945602f2e00a97b3ed6"
+      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.1/agentic-orchestrator_0.144.1_linux_amd64.tar.gz"
+      sha256 "db7f369ed1a26351a64e019052575cdfbd16a24e49f8e737813f17252db30ccb"
       define_method(:install) do
         bin.install "agentico"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.0/agentic-orchestrator_0.144.0_linux_arm64.tar.gz"
-      sha256 "477a94c0bc241f0f936dccf33f7f8455ca32d41f712c9e722e0d334c586b56f5"
+      url "https://github.com/doordash-oss/agentic-orchestrator/releases/download/v0.144.1/agentic-orchestrator_0.144.1_linux_arm64.tar.gz"
+      sha256 "d59068d173a25eb6859e8fee41103431d5dd441127d56e2080d56c43c9df35ba"
       define_method(:install) do
         bin.install "agentico"
       end
