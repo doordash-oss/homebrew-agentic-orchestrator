@@ -29,4 +29,3 @@ cask "agentico-desktop" do
     "~/Library/Saved Application State/com.doordash.agentico.savedState",
   ]
 end
-
